@@ -22,7 +22,7 @@ function App() {
         <Cabecera></Cabecera>
       </header>
       <Menu></Menu>
-a
+
       <CochesComponente></CochesComponente>
 
       <FormularioValidaciones></FormularioValidaciones>
