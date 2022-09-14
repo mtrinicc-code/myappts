@@ -7,9 +7,7 @@ function ContactoPage() {
 
         return (
             <div id="ContactoPage">
-                <Link to="/listado">ProductosPage</Link>
-                <button onClick={() => { navigate("/listado"); }}>Ir al listado</button>
-                <h2>ContactoPage: {params.id}</h2>
+                <h2>ContactoPage </h2>
             </div>
         )
 }
