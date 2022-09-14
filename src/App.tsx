@@ -14,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CosicasBootstrap from './components/CosicasBootstrap';
 import FormularioValidaciones from './components/FormularioValidaciones';
 import CochesComponente from './components/clientes/ClienteComponente';
+import AppRoutes from './components/navegacion/AppRoutes';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Cabecera></Cabecera>
       </header>
       <Menu></Menu>
+      <AppRoutes></AppRoutes>
 
       <CochesComponente></CochesComponente>
 
