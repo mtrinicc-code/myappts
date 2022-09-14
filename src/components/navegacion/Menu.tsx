@@ -1,7 +1,8 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-/*import ContactoPage from "./ContactoPage";
+import ContactoPage from "./ContactoPage";
+import Detalle from "./Detalle";
 import InicioPage from "./InicioPage";
-import ProductosPage from "./ProductosPage";*/
+import ProductosPage from "./ProductosPage";
 
 function Menu() {
 
@@ -16,9 +17,10 @@ function Menu() {
                     <Link to="/contacto">Contacto</Link> |{" "}
                 </nav>
                 <Routes>
-                    <Route path="/" element={<h2>Inicio</h2>} />
-                    <Route path="productos" element={<h2>Productos</h2>} />
-                    <Route path="contacto" element={<h2>Conctacto</h2>} />
+                    <Route path="/" element={<InicioPage></InicioPage>} />
+                    <Route path="productos" element={<ProductosPage></ProductosPage>} />
+                    <Route path="contacto" element={<ContactoPage></ContactoPage>} />
+                    <Route path="productos/:id" element={<Detalle></Detalle>} />
                     <Route
                         path="*"
                         element={

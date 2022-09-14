@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
+import ListarProductos from './ListarProductos';
 interface MiListado {
     listado: string [];
 }
@@ -14,19 +15,7 @@ class  ProductosPage extends Component<any, MiListado>{
         return (
             <div id="ProductosPage">
                 <h2>ProductosPage</h2>
-                <ul>
-
-                    {this.state.listado.map(item => (
-                        <li key={item}>
-
-                            <Link to={{
-                                pathname: "/listado/"+item
-                            }}>
-                                {item}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+                <ListarProductos></ListarProductos>
             </div>
         )
     }

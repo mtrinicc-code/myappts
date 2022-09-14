@@ -16,7 +16,7 @@ function InicioPage () {
 
     return (
             <div>
-                <h2>Navegación programática</h2>
+                <h2>Inicio</h2>
                 <p><button onClick={onclick}>InicioPage</button> </p>
             </div>
 
