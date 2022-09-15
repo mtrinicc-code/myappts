@@ -14,6 +14,8 @@ function Menu() {
                     <Link to="/">Inicio</Link>|{" "}
                     <Link to="/productos">Productos</Link> |{" "}
                     <Link to="/contacto">Contacto</Link> |{" "}
+                    <Link to="/partidos">Partidos</Link> |{" "}
+                    <Link to="/redux">Redux</Link> |{" "}
                 </nav>
         </div>
     )
