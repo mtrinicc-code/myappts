@@ -1,22 +1,23 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { LoginContext } from "./LoginContext";
-import {useState} from 'react';
+import {useContext, useState} from 'react';
 
 function Menu() {
-    const [loggedIn, setLoggedIn] = useState<boolean>(false)
+    const { loggedIn, setLoggedIn } = useContext(LoginContext)
 
     return (
         <div>
-            <LoginContext.Provider value={{ loggedIn, setLoggedIn }}>
             
-                <h1>Navegación</h1>
-                <nav>
-                    <Link to="/">Inicio</Link>|{" "}
-                    <Link to="/ayuda">Ayuda</Link> |{" "}
-                    <Link to="/clientes">Clientes</Link> |{" "}
-                    <Link to="/login">Login</Link> {""}
-                </nav>
-            </LoginContext.Provider>
+            {loggedIn && 
+                <>
+                    <h1>Menú</h1>
+                    <nav>
+                        <Link to="/">Inicio</Link>|{" "}
+                        <Link to="/ayuda">Ayuda</Link> |{" "}
+                        <Link to="/clientes">Clientes</Link> |{" "}
+                    </nav>
+                </>
+            }
         </div>
     )
 }

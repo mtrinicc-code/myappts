@@ -16,6 +16,7 @@ import FormularioValidaciones from './components/FormularioValidaciones';
 import MiContenedor from './components/context/MiContenedor';
 import CochesComponente from './components/clientes/ClienteComponente';*/
 import AppRoutes from './components/final/AppRoutes';
+import Principal from './components/final/Principal';
 
 function App() {
   return (
@@ -23,9 +24,10 @@ function App() {
       <header className="App-header">
         <Cabecera></Cabecera>
       </header>
+      <Principal></Principal>
+      {/*
       <Menu></Menu>
       <AppRoutes></AppRoutes>
-      {/*
       
       <MiContenedor></MiContenedor>
       <hr/>

@@ -16,7 +16,8 @@ export const Login = () => {
                         <DisplayLogin />
                     }
                 <div>
-                    <button onClick={() => setLoggedIn(!loggedIn)}>Login</button>
+                    <button onClick={() => setLoggedIn(!loggedIn)}>
+                        {loggedIn ? 'Logout' : 'Login'}</button>
                 </div>
             </div>
         </>
