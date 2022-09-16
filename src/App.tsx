@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Menu from './components/navegacion/Menu';
+import Menu from './components/final/Menu';
 import Cabecera from './components/Cabecera';
-import PiePagina from './components/PiePagina';
+/*import PiePagina from './components/PiePagina';
 import ContenidoPaginaPrincipal from './components/ContenidoPaginaPrincipal';
 import FichaCliente from './components/FichaCliente';
 import Envio from './components/Envio';
@@ -13,8 +13,9 @@ import FormularioLogin from './components/FormularioLogin';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CosicasBootstrap from './components/CosicasBootstrap';
 import FormularioValidaciones from './components/FormularioValidaciones';
-import CochesComponente from './components/clientes/ClienteComponente';
-import AppRoutes from './components/navegacion/AppRoutes';
+import MiContenedor from './components/context/MiContenedor';
+import CochesComponente from './components/clientes/ClienteComponente';*/
+import AppRoutes from './components/final/AppRoutes';
 
 function App() {
   return (
@@ -22,6 +23,12 @@ function App() {
       <header className="App-header">
         <Cabecera></Cabecera>
       </header>
+      <Menu></Menu>
+      <AppRoutes></AppRoutes>
+      {/*
+      
+      <MiContenedor></MiContenedor>
+      <hr/>
       <Menu></Menu>
       <AppRoutes></AppRoutes>
 
@@ -41,7 +48,7 @@ function App() {
       <Envio></Envio>
 
       <FichaAlumno nombre='Alumno1'></FichaAlumno>
-      <PiePagina></PiePagina>
+      <PiePagina></PiePagina>*/}
 
       
     </div>
